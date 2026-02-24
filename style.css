@@ -127,7 +127,7 @@ outline: none;
 color: aliceblue;
 background-color: #1d1d1d;
 border-radius: 50px;
-transition: 0.3ease;
+transition: 0.3s ease;
 }
 
 hr{
@@ -185,13 +185,13 @@ button:hover{
   height: 85%;
   top: 0;
   left: 0;
-  text-replace: 00.3ease;
+  transition: 0.3s ease;
 }
 
 #new .one .details:hover{
 
 cursor: pointer;
-background-color: rgba(245, 178, 178, 0.7);
+
 }
 
 #new .one .details button{
@@ -293,20 +293,17 @@ align-items: flex-start;
     background-color: #fb774b;
   }
   
-  /* button logn sing up*/
-
-  .button{
-    position: relative;
-    left: 180px;
+  /* button login / sign up in nav */
+  .auth-buttons{
+    gap: 10px;
+    margin-left: 10px;
   }
-  .button #btn1 #btn2{
-    padding: 10px 8px;
+  .auth-buttons button{
+    padding: 8px 16px;
   }
 
-  .nav-item img{
-    position: relative;
-    left: 20px;
-    top: -10px;
+  .nav-search-item img{
+    cursor: pointer;
   }
 
   /* form */
@@ -429,7 +426,7 @@ align-items: flex-start;
     outline: none;
     font-size: 0.95rem;
     border-radius: 3px;
-    border: 1ps solid #717171;
+  border: 1px solid #717171;
     padding: 0 15px;
   
   }
@@ -536,7 +533,7 @@ align-items: flex-start;
   }
   
   .form-show{
-    display:;
+    display:none;
   }
   
   /* responsive .form-popup */
@@ -552,6 +549,22 @@ align-items: flex-start;
   
     .form-box .form-content {
       padding: 30px 20px;
+    }
+
+    /* nav buttons and search better on small screens */
+    .navbar-nav{
+      align-items: flex-start;
+    }
+    .nav-search-item,
+    .auth-buttons{
+      width: 100%;
+      justify-content: flex-start;
+    }
+    .auth-buttons{
+      margin-top: 10px;
+    }
+    .nav-search-item{
+      margin-top: 10px;
     }
   }
 
@@ -745,10 +758,10 @@ footer{
 /* search */
 
 .srcBox{
-  position: relative;
-  left: 80px;
+  position: static;
 }
 .srcBox input{
+  display: none;
   padding: 5px;
   border: none;
   border-radius: 5px;
@@ -758,8 +771,23 @@ footer{
 }
 #svg2{
   position: relative;
-  left: 90px;
+  
   cursor: pointer;
 }
 /*search*/
+
+
+
+
+
+
+/* SEARCH BOX */
+
+
+
+
+
+
+
+
 
